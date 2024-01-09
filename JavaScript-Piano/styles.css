@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.top-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    max-height: 100px;
+}
+
+body {
+    background-color: #C6BA97;
+    margin: 25px;
+}
+
+.piano {
+    display: flex;
+}
+
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+}
+
+.white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.white.active {
+    background-color: #CCC;
+}
+
+.black {
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+}
+
+.black.active {
+    background-color: #333;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+h3 {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+h4 {
+    color: white;
+    font-size: 25px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.blackText {
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.border1 {
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: auto;
+}
+
+.Instructions {
+    display: flex;
+    justify-content: center;
+    background-color: #C6BA97;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.linkToPlay {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+button {
+    font-family: "Sinhala MN", serif;
+    background-color: #C6BA97;
+    color: white;
+    border: 2px solid white;
+    font-size: 25px;
+    border-radius: 15%;
+    margin: 25px;
+    transition: background-color 0.3s;
+}
+
+button:active {
+    background-color: #948b6f;
+}
+
+button:hover {
+    background-color: #948b6f;
+}
